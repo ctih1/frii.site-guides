@@ -1,4 +1,5 @@
 export default {
+    base: "/",
     title: "frii.site docs",
     description: "Documentation for frii.site",
     themeConfig: {
