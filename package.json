@@ -1,0 +1,25 @@
+{
+  "name": "frii.site-guides",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctih1/frii.site-guides.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctih1/frii.site-guides/issues"
+  },
+  "homepage": "https://github.com/ctih1/frii.site-guides#readme",
+  "description": "",
+  "dependencies": {
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.13"
+  }
+}
