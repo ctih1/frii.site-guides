@@ -26,7 +26,8 @@ export default {
                 items: [
                     { text: "Specifying ports", link: "/faq/ports" },
                     { text: "Increasing domain limit", link: "/faq/domain-limit" },
-                    { text: "I forgot my username", link: "/faq/forgot-username"}
+                    { text: "I forgot my username", link: "/faq/forgot-username"},
+                    { text: "How to support us", link: "/faq/supporting"}
                 ],
             },
             {
@@ -34,8 +35,16 @@ export default {
                 collapsible: true,
                 items: [
                     { text: "Registering", link: "/guides/registering" },
-                    { text: "Modifying", link: "/guides/modify" },
                     { text: "Verifying Vercel", link: "/guides/vercel"}
+                ],
+            },
+            {
+                text: "Translation",
+                collapsible: true,
+                items: [
+                    { text: "Getting started", link: "/translation/getting_started" },
+                    { text: "Questions", link: "/translation/questions" },
+                    { text: "Crediting yourself", link: "/translation/crediting"}
                 ],
             }
         ],
