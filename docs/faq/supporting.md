@@ -13,7 +13,7 @@ We also offer a badge you can embed to your website.
 
 
 > [!IMPORTANT]
-> Since the badge doesn't require JavaScript, it is recommended to use the `sandbox` attribute in the `iframe`.
+> Since the badge doesn't require Javacript, it is recommended to use the `sandbox` attribute in the `iframe`.
 
 
 ## Or just by using an image
