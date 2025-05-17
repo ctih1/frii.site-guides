@@ -2,6 +2,10 @@ export default {
     base: "/",
     title: "frii.site docs",
     description: "Documentation for frii.site",
+    sitemap: {
+        hostname: "https://guides.frii.site",
+        lastmodDateOnly: false
+    },
     themeConfig: {
         search: {
             provider: 'local'
