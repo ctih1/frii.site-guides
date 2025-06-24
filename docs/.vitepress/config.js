@@ -39,7 +39,8 @@ export default {
                 collapsible: true,
                 items: [
                     { text: "Registering", link: "/guides/registering" },
-                    { text: "Verifying Vercel", link: "/guides/vercel"}
+                    { text: "Verifying Vercel", link: "/guides/vercel"},
+                    { text: "Managing a record with your own DNS server", link: "/guides/custom-dns"}
                 ],
             },
             {

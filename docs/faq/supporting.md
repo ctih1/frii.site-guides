@@ -3,7 +3,7 @@
 We are currently not accepting donations, so the best thing you can do is sharing frii.site to other people.
 We also offer a badge you can embed to your website.
 
-## With the `embed` HTML tag
+## With the `iframe` HTML tag
 
 <iframe type="text/html" src="https://www.frii.site/badges/modern.html" sandbox />
 
@@ -19,4 +19,4 @@ We also offer a badge you can embed to your website.
 ## Or just by using an image
 ![frii.site banner](https://www.frii.site/badges/modern.png)
 
-https://www.frii.site/badges/modern.png
+`https://www.frii.site/badges/modern.png`
