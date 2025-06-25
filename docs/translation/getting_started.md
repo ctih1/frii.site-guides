@@ -27,9 +27,16 @@ Now create a pull request into the `dev` branch of frii.site.
 
 # Creating a new locale
 1. Fork this repo, and switch over to the dev branch
+
+
 ```git clone https://github.com/ctih1/frii.site-frontend && cd frii.site-frontend && git checkout dev```
 
 2. Copy the `en.json` file (located in `messages/en.json`) into the same directory, and change the name to your language (e.g Italian: it, Polish: pl, French: fr)
+
+![translation](/translation_copy.png)
+![translation](/translation_paste.png)
+![translation](/translation_rename.png)
+
 
 3. Add your language to `project.inlang/settings.json`s `languageTags` array.
 ![new item in languageTags array](/project_new_language.png)
