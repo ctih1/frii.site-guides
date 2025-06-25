@@ -1,94 +1,81 @@
-# The official translation guide for frii.site 💬
+# Contributing to an existing language
+1. Fork this repo, and switch over to the dev branch
+```git clone https://github.com/ctih1/frii.site-frontend && cd frii.site-frontend && git checkout dev```
 
-## Requirements
-* Being fluent in English and the other language.
-* Basic knowledge of JSON, TypeScript, and GitHub
-* An internet connection
-
-## Getting started
-### Setting up
-Firstly, create a fork of this repo, after that, clone it, and switch over to the `dev` branch.
+Now open https://fink.inlang.com/ and input your forks url
+![Fink website](/fink_input.png)
 
 
-### (Optional) setting up Visual Studio Code
-frii.site now supports i18n Ally extension. You can take advantage of it by simply installing the extension. The extension is most useful for developers, since it helps visualize translation keys
+Now change over to the `dev` branch
+![fink_dev](/fink_dev.png)
 
-![Näyttökuva 2025-3-18 kello 19 50 35](https://github.com/user-attachments/assets/f0dcf6f7-00e1-4280-8b2f-d93b49da24f9)
+Change to your target language
+![fink select language](/fink_select.png)
 
-![Näyttökuva 2025-3-18 kello 19 52 40](https://github.com/user-attachments/assets/8864cda2-a746-4350-bf40-9044035e0afe)
+Now translate your sentences
+![fink english sentence](/fink_before.png)
+into your target language
+![fink translated sentence](/fink_after.png)
 
-![Näyttökuva 2025-3-18 kello 19 53 26](https://github.com/user-attachments/assets/0f214460-ac0e-4cec-a32e-ed95a93b190b)
+Once you're done, log into fink 
+![fink login button](/fink_login.png)
 
-![Näyttökuva 2025-3-18 kello 19 53 43](https://github.com/user-attachments/assets/67ecc7b2-c2f7-42a6-b0b5-b088bf353732)
+And now push the changes into your repository.
 
-### Registering a new language
-Registering a new language is pretty easy, but still requires multiple steps. We will be using the french language for this example
-1. Add your language's name in its native languge in `src/locales/+lang.js`, like so: `"fr":"française"` (make sure you have basic knowledge of JSON)
-2. Go to `src/lib/translations.ts`, and copy the first item in the "loaders" array.
+Now create a pull request into the `dev` branch of frii.site.
+![New pull request from dev to ctih1/dev](/pr_create.png)
+
+# Creating a new locale
+1. Fork this repo, and switch over to the dev branch
+```git clone https://github.com/ctih1/frii.site-frontend && cd frii.site-frontend && git checkout dev```
+
+2. Copy the `en.json` file (located in `messages/en.json`) into the same directory, and change the name to your language (e.g Italian: it, Polish: pl, French: fr)
+
+3. Add your language to `project.inlang/settings.json`s `languageTags` array.
+![new item in languageTags array](/project_new_language.png)
 
 <details>
-<summary>Example</summary>
+<summary>Editing using your code editor (recommended)</summary>
+Open your new `.json` file located in the `messages` directory, and translate the sentences into your language. 
 
-before: 
-```ts
-...
-	loaders: [
-		{
-			"locale":"en",
-			"key":"common",
-			loader: async() => (
-				await import("../locales/en.json")
-			).default,
-		},
-		{
-			"locale":"fi",
-			"key":"common",
-			loader: async() => (
-				await import("../locales/fi.json")
-			).default
-		}
-	]
-...
-```
+> [!WARNING]
+> Do **NOT** translate variables (text wrapped in {}) inside sentences. Variables such a `{domain}` and `{email}` can not be translated, as they would stop working. You can move these variables around the sentence itself, but you can not move them into other sentences, or delete them.
 
-after: 
-```ts
-...
-	loaders: [
-		{
-			"locale":"en",
-			"key":"common",
-			loader: async() => (
-				await import("../locales/en.json")
-			).default,
-		},
-		{
-			"locale":"fi",
-			"key":"common",
-			loader: async() => (
-				await import("../locales/fi.json")
-			).default
-		},		
-		{
-			"locale":"fr",
-			"key":"common",
-			loader: async() => (
-				await import("../locales/fr.json")
-			).default
-		}
-	]
-...
-```
+**After you're done editing**, push the changes into your fork (`git push origin dev`)
+Now create a pull request into the `dev` branch of frii.site.
+![New pull request from dev to ctih1/dev](/pr_create.png)
 
 </details>
 
-3. Now copy the `en.json` file in `src/locales`, rename it to your language's ISO-639 code, which is 2 letters long ([list can be found here](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes), specifically the "Set 1" column)
+<details>
+<summary>Editing using a web editor</summary>
 
-4. Read this guide completely
+Firstly, push the changes into your fork (`git push origin dev`)
 
-5. Start translating
+Now open https://fink.inlang.com/ and input your forks url
+![Fink website](/fink_input.png)
 
-6. Credit yourself
+
+Now change over to the `dev` branch
+![fink_dev](/fink_dev.png)
+
+Change to your target language
+![fink select language](/fink_select.png)
+
+Now translate your sentences
+![fink english sentence](/fink_before.png)
+into your target language
+![fink translated sentence](/fink_after.png)
+
+Once you're done, log into fink 
+![fink login button](/fink_login.png)
+
+And now push the changes into your repository.
+
+Now create a pull request into the `dev` branch of frii.site.
+![New pull request from dev to ctih1/dev](/pr_create.png)
+
+</details>
 
 
 ## Rewards
