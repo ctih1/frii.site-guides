@@ -3,7 +3,7 @@
 Why do you need to specify what port to use?
 Short answer: **you can't change the port directly**. There are a few workarounds.
 1. Using service's default port
-    > Certain services use a default port, which they will try to conenct to first. For example, SSH uses port 22, Minecraft port 25565.
+    > Certain services use a default port, which they will try to conenct to first. For example, if you're hosting a minecraft server on the default port (25565), you most likely don't have to specify the port, since Minecraft automatically tries connecting there first.
     
 2. Using a reverse proxy (such as NGINX)
     > If you are running a webserver, you can use a reverse proxy such as NGINX to redirect your requests. Here's an example where NGINX redirects requests from port 80 to 8080
