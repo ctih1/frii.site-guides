@@ -41,6 +41,7 @@ export default {
                 items: [
                     { text: "Registering", link: "/guides/registering" },
                     { text: "Verifying Vercel", link: "/guides/vercel"},
+                    { text: "Verifying discord connection", link: "/guides/discord-verification"},
                     { text: "Managing a record with your own DNS server", link: "/guides/custom-dns"}
                 ],
             },
