@@ -14,7 +14,6 @@ export default {
         siteTitle: "frii.site docs",
         nav: [
             { text: "Home", link: "/" },
-            { text: "Guides", link: "/guides" },
             { text: "Contact", link: "/contact" },
         ],
 
@@ -36,13 +35,14 @@ export default {
                 ],
             },
             {
-                text: "Domain modification",
+                text: "Guides",
                 collapsible: true,
                 items: [
-                    { text: "Registering", link: "/guides/registering" },
+                    { text: "Registering domains", link: "/guides/registering" },
                     { text: "Verifying Vercel", link: "/guides/vercel"},
                     { text: "Verifying discord connection", link: "/guides/discord-verification"},
-                    { text: "Managing a record with your own DNS server", link: "/guides/custom-dns"}
+                    { text: "Managing a record with your own DNS server", link: "/guides/custom-dns"},
+                    { text: "Self hosting the backend", link: "/guides/self-host"},
                 ],
             },
             {
