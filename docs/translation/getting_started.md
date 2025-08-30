@@ -1,72 +1,89 @@
-# Contributing to an existing language
-1. Fork this repo, and switch over to the dev branch
-```git clone https://github.com/ctih1/frii.site-frontend && cd frii.site-frontend && git checkout dev```
+# General frii.site translation guide
+This guide consists of 3 parts:
+* Requiremements
+* How to create a new locale
+* How to edit existing locales
+* Best practices
 
-Now open https://fink.inlang.com/ and input your forks url
-![Fink website](/fink_input.png)
-
-
-Now change over to the `dev` branch
-![fink_dev](/fink_dev.png)
-
-Change to your target language
-![fink select language](/fink_select.png)
-
-Now translate your sentences
-![fink english sentence](/fink_before.png)
-into your target language
-![fink translated sentence](/fink_after.png)
-
-Once you're done, log into fink 
-![fink login button](/fink_login.png)
-
-And now push the changes into your repository.
-
-Now create a pull request into the `dev` branch of frii.site.
-![New pull request from dev to ctih1/dev](/pr_create.png)
-
-# Creating a new locale
-1. Fork this repo, and switch over to the dev branch
+## Requirements
+You'll need the following to create, or update translations:
+* A GitHub account
+* Internet connection
+* Fluency in both english and the target language
 
 
-```git clone https://github.com/ctih1/frii.site-frontend && cd frii.site-frontend && git checkout dev```
+For creating a new locale:
+* Knowledge of git
+* Knowledge of JSON (specifically how arrays work)
+---
 
-2. Copy the `en.json` file (located in `messages/en.json`) into the same directory, and change the name to your language (e.g Italian: it, Polish: pl, French: fr)
+<details>
+<summary>Adding a new locale</summary>
 
-![translation](/translation_copy.png)
-![translation](/translation_paste.png)
-![translation](/translation_rename.png)
+## Adding a new locale
+First of all, we need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) the frii.site-frontend repo to be able to make changes to it. 
 
+> [!CAUTION]
+> Make sure to **deselect** "Copy the `master` branch only" when forking the repository.
+
+![Image of forking the repo on github](/fork_frontend.png)
+
+
+Adding a new locale requires a **new localisation file** inside the website's `messages` directory.
+
+
+> [!NOTE]
+> We will be using Estonian as an example in this guide, but the steps apply to every other language
+
+0. Clone **your fork** and switch over to the `dev` branch before doing any modifications. 
+> git clone https://github.com/your-username/frii.site-frontend
+
+> git checkout dev
+
+1. Find the *ISO 639-2 language code* for your language (https://www.loc.gov/standards/iso639-2/php/code_list.php)
+![Estonian ISO 639-2 table highlightedd](/translation_key_estonian.png)
+> Pick the second row's value, so "ET" in this case.
+
+2. Copy the `en.json` file inside the `messages` folder, and rename it to your desired locale. (e.g `et.json`)
 
 3. Add your language to `project.inlang/settings.json`s `languageTags` array.
 ![new item in languageTags array](/project_new_language.png)
 
-<details>
-<summary>Editing using your code editor (recommended)</summary>
-Open your new `.json` file located in the `messages` directory, and translate the sentences into your language. 
+Now push the changes to your fork.
 
-> [!WARNING]
-> Do **NOT** translate variables (text wrapped in {}) inside sentences. Variables such a `{domain}` and `{email}` can not be translated, as they would stop working. You can move these variables around the sentence itself, but you can not move them into other sentences, or delete them.
-
-**After you're done editing**, push the changes into your fork (`git push origin dev`)
-Now create a pull request into the `dev` branch of frii.site.
-![New pull request from dev to ctih1/dev](/pr_create.png)
+**Now follow the locale editing guide**
 
 </details>
 
 <details>
-<summary>Editing using a web editor</summary>
+<summary>Editing an existing locale</summary>
+If you haven't already, please fork the repository
 
-Firstly, push the changes into your fork (`git push origin dev`)
+<details>
+<summary>Forking the repo</summary>
 
-Now open https://fink.inlang.com/ and input your forks url
+First of all, we need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) the frii.site-frontend repo to be able to make changes to it. 
+
+> [!CAUTION]
+> Make sure to **deselect** "Copy the `master` branch only" when forking the repository.
+
+![Image of forking the repo on github](/fork_frontend.png)
+
+
+</details>
+
+<details>
+<summary>Editing inside a website</summary>
+
+
+Open https://fink.inlang.com/ and input your forks url
 ![Fink website](/fink_input.png)
 
 
 Now change over to the `dev` branch
 ![fink_dev](/fink_dev.png)
 
-Change to your target language
+Select your target language
 ![fink select language](/fink_select.png)
 
 Now translate your sentences
@@ -76,23 +93,41 @@ into your target language
 
 Once you're done, log into fink 
 ![fink login button](/fink_login.png)
+and push the changes to your fork.
 
-And now push the changes into your repository.
+</details>
 
-Now create a pull request into the `dev` branch of frii.site.
+<details>
+<summary>Editing inside a code editor</summary>
+
+Open up your language file, and start translating the sentences.
+
+Once you're done, push the changes to your GitHub repo
+</details>
+
+After pushing your changes, open a **pull request** **from your dev branch** to **ctih1/frii.site-frontend dev branch**
+
+> [!CAUTION]
+> Pull requests that are trying to merge to the `master` branch will be discarded. 
+
 ![New pull request from dev to ctih1/dev](/pr_create.png)
 
 </details>
 
+<details>
+<summary>Best practises</summary>
 
-## Rewards
-You can get certain rewards for translating frii.site into your language.
-make sure you include your frii.site username with in the pull request
+1. **DON'T USE FINK'S MACHINE TRANSLATION BUTTON**. It is extremely buggy, inaccurate, and breaks variables.
 
-| How many people speak it | Reward |
-| ------------------------ | ------ |
-| less than 5 million      | Added to the contributors |
-| 5 million - 50 million   | 150 credits |
-| 51 million - 99 million  | 350 credits |
-| 100 million - 500 million| 500 credits |
-| more than 500 million    | 800 credits |
+2. **Prioritize fluidity over accuracy to a certain extent**
+
+Not everything has to be translated perfectly! You can alter the text as long as the sentence preserves its meaning and tone.
+
+3. **Sound professional**
+4. **Use variables correctly.**
+
+Variables are pieces of text wrapped in curly brackets (`{}`). Please do not rename them. What you SHOULD do is move them around. For example, if the english sentence is `The domain {domain} was deleted`, you could translate it as `{domain} was deleted` in your language.
+
+5. Join [our discord](/contact) for updates
+</details>
+
