@@ -43,6 +43,7 @@ export default {
                     { text: "Verifying discord connection", link: "/guides/discord-verification"},
                     { text: "Managing a record with your own DNS server", link: "/guides/custom-dns"},
                     { text: "Self hosting the backend", link: "/guides/self-host"},
+                    { text: "The frii.site API", link: "/guides/api"}
                 ],
             },
             {
