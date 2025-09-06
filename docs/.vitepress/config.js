@@ -31,7 +31,8 @@ export default {
                     { text: "Increasing domain limit", link: "/faq/domain-limit" },
                     { text: "I forgot my username", link: "/faq/forgot-username"},
                     { text: "How to support us", link: "/faq/supporting"},
-                    { text: "Changing password", link: "/faq/changing-password"}
+                    { text: "Changing password", link: "/faq/changing-password"},
+                    { text: "Emails not being delivered", link: "/faq/email-not-delivering"}
                 ],
             },
             {
