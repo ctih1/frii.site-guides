@@ -8,7 +8,7 @@ export default {
   ...DefaultTheme,
   setup() {
     onMounted(() => {
-      mediumZoom('img', { background: 'var(--vp-c-bg)' });
+      mediumZoom('img:not(.logo)', { background: 'var(--vp-c-bg)' });
     });
   },
 };
