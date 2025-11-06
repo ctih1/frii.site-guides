@@ -33,7 +33,8 @@ export default {
                     { text: "How to support us", link: "/faq/supporting"},
                     { text: "Changing password", link: "/faq/changing-password"},
                     { text: "Emails not being delivered", link: "/faq/email-not-delivering"},
-                    { text: "How referrals work", link: "/faq/referrals"}
+                    { text: "How referrals work", link: "/faq/referrals"},
+                    { text: "Record types (A, CNAME, etc)", link: "/faq/record-types"}
                 ],
             },
             {
@@ -41,6 +42,7 @@ export default {
                 collapsible: true,
                 items: [
                     { text: "Registering domains", link: "/guides/registering" },
+                    { text: "Dynamic DNS (DDNS)", link: "/guides/ddns"},
                     { text: "Verifying Vercel", link: "/guides/vercel"},
                     { text: "Verifying discord connection", link: "/guides/discord-verification"},
                     { text: "Managing a record with your own DNS server", link: "/guides/custom-dns"},
