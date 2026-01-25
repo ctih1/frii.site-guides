@@ -12,7 +12,7 @@
 ![dashboard](/dashboard_new_txt.png)
 
 4. Edit the TXT record to have your verification code
-![dashboard](/dashboard_domain.png)
+![dashboard](/dashboard_discord_verif.png.png)
 
 5. Verify on Discord
 
