@@ -16,9 +16,6 @@ For API requests, you can specify the API token with the `X-API-Token` header. T
 ## How to get the API key
 Go to https://www.frii.site/api/dashboard
 
-> [!NOTE]
-> As of september 5th 2025, the API dashboard is only available in the testing version of frii.site (https://canary.frii.site/api/dashboard)
-
 ## API key permissions explained
 ### Affected domains
 These are the domains that the API key affects

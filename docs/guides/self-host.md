@@ -1,7 +1,7 @@
 # How to self host the frii.site backend?
 
 ### Notice:
-- We can't guarantee that it'll work perfeclty etc use at your own risk, there is no warranty.
+- We can't guarantee that it'll work perfectly etc.. Use at your own risk, there is no warranty.
 - If you encounter any issues, join our discord for friendly support! (link located in https://guides.frii.site/contact.html)
 - The self-hosted backend has not been completely tested
 - Every service listed in the requirements can be either hosted for free, or self hosted. You might need your own domain to setup Resend.

@@ -9,4 +9,3 @@
 4. Press Join queue
 
 It is possible that there are other people in the queue. Each user has **45 seconds to verify their domain** before the next person in queue overtakes their seat. 
-
