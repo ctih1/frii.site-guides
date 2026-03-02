@@ -17,18 +17,15 @@ Email us at webring@frii.site with the following info:
 * Name for your website 
 * Your nickname
 
-Add the following into the `<head>` of your website:
+After that, add this `iframe` onto your website:
 
 ```html
-<head>
-    ...
-    <script src="https://webring.frii.site/script.js" defer></script>
-</head>
-```
+<iframe
+    title="frii.site webring"
+    width="304px"
+    height="204px"
+    src="https://webring.frii.site/embed.html?website=http(s)://yourwebsite.com"
+></iframe>```
 
-And the following to your `<body>` (the location doesn't matter):
-```html
-<div id="fs-webring" data-url="http(s)://yourwebsite.com"></div>
-```
-
-The `data-url` is meant to make identifying your website more reliable. While technically this isn't mandated, you should specify it anyways in case your URL changes, or you're previewing your website locally.
+> [!NOTE]
+> Please change the `?website=` to your own website (e.g. `?website=https://www.frii.site`)
