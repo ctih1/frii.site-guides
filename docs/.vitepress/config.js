@@ -41,13 +41,14 @@ export default {
                 text: "Guides",
                 collapsible: true,
                 items: [
-                    { text: "Registering domains", link: "/guides/registering" },
                     { text: "Dynamic DNS (DDNS)", link: "/guides/ddns"},
+                    { text: "Registering domains", link: "/guides/registering" },
                     { text: "Verifying Vercel", link: "/guides/vercel"},
                     { text: "Verifying discord connection", link: "/guides/discord-verification"},
                     { text: "Managing a record with your own DNS server", link: "/guides/custom-dns"},
                     { text: "Self hosting the backend", link: "/guides/self-host"},
-                    { text: "The frii.site API", link: "/guides/api"}
+                    { text: "The frii.site API", link: "/guides/api"},
+                    { text: "frii.site webring", link: "/guides/webring"}
                 ],
             },
             {
