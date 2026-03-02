@@ -25,7 +25,8 @@ After that, add this `iframe` onto your website:
     width="304px"
     height="204px"
     src="https://webring.frii.site/embed.html?website=http(s)://yourwebsite.com"
-></iframe>```
+></iframe>
+```
 
 > [!NOTE]
 > Please change the `?website=` to your own website (e.g. `?website=https://www.frii.site`)
