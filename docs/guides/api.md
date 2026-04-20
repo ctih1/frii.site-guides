@@ -3,6 +3,9 @@
 > [!CAUTION]
 > Please only use paths under `/api/`.
 
+> [!TIP]
+> You can copy and paste the contents of this document and give it to an AI for a smoother experience. [Click here to open this section as raw text](https://raw.githubusercontent.com/ctih1/frii.site-guides/refs/heads/main/docs/guides/api.md)
+
 Other paths are meant for authenticated users.
 
 ## Authenticated or not?
